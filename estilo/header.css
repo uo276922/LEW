@@ -1,58 +1,90 @@
+
 header {
+  position: relative;
   display: flex;
-  align-items: center;
   justify-content: space-between;
-  padding: 10px;
+  align-items: center;
+  padding: 0.75em;
   background-color: #d21d1d;
+  color: white;
+  height: 6em;
 }
 
-header img {
-  height: 2.5em;
-  
+header > *:nth-child(1) {
+  width: 4em;
+  height: 4em;
 }
 
-header input[type="search"] {
-  flex: 1;
-  margin: 0 10px;
-  padding: 5px;
-  border-radius: 5px;
-  border: 1px solid #ccc;
-}
-
-header button {
-  background-color: transparent;
+header > input {
+  flex: 0.7;
+  margin: 0 auto;
+  padding: 0.5em;
+  border-radius: 1em;
   border: none;
-  cursor: pointer;
-  color: white;
+  font-size: 1.2em;
 }
 
-header button img {
+header > input::placeholder {
+  color: black;
+}
+
+header > input[type="search"] {
+  background-size: 1.5em;
+  background-position: 10px center;
+  background-repeat: no-repeat;
+  padding-left: 2em;
+}
+
+header > button {
   background-color: white;
-  font-size: 0.75em;
+  border: none;
+  padding: 0.5em;
+  cursor: pointer;
   border-radius: 100%;
-  padding: 10px;
+  margin-right: 0.4em;
+  transition: background-color 0.3s;
 }
 
-nav {
+header > button > img {
+  width: 1.5em;
+  height: 1.5em;
+  padding: 0.5em;
+  cursor: pointer;
+  border-radius: 100%;
+}
+
+header > nav {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
   text-align: center;
-  background-color: #d21d1d;
-  color: white;
-  padding-bottom: 10px;
+  padding-bottom: 0.5em;
+  font-size: 1.2em;
 }
 
 nav ul {
-
+  list-style-type: none;
+  padding: 0;
   margin: 0;
+  display: inline-flex;
 }
 
 nav ul li {
-  display: inline;
-  margin: 0 10px;
-  color: white;
-  
+  margin: 0 0.75em; 
 }
 
 nav ul li a {
-  text-decoration: none;
   color: white;
+  text-decoration: none;
+  transition: color 0.3s; 
 }
+
+nav ul li a:hover {
+  color: #cccccc; 
+}
+
+header > button:hover {
+  background-color: #cccccc; 
+}
+
+
