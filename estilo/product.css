@@ -53,12 +53,11 @@ main > section:nth-of-type(1) > h4{
 
 main > section:nth-of-type(1) > button {
   margin-top: auto; 
-  width: 100%; 
+  width: 99%; 
   padding: 1em;
   background-color: #d21d1d; 
   font-size: 1em;
   color: white; 
-  text-align: center;
   border: none; 
   border-radius: 5px; 
   cursor: pointer; 
