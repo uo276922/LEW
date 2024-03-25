@@ -6,6 +6,7 @@ body {
   grid-template-rows: auto 1fr auto;
   grid-template-areas:
     "header"
+    "nav"
     "aside"
     "main"
     "footer";
@@ -14,6 +15,10 @@ body {
 
 header {
   grid-area: header;
+}
+
+nav{
+  grid-area: nav;
 }
 
 
@@ -25,6 +30,7 @@ main {
   align-items: flex-start;
   flex-wrap: wrap;
   gap: 1em;
+  padding-top: 1.2em;
 }
 
 section {

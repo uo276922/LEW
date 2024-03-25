@@ -6,6 +6,7 @@ body {
   grid-template-rows: auto 1fr auto;
   grid-template-areas:
     "header header"
+    "nav nav"
     "main main"
     "footer footer";
   font-family: Arial, sans-serif;
@@ -13,6 +14,10 @@ body {
 
 header {
   grid-area: header;
+}
+
+nav{
+  grid-area: nav;
 }
 
 main {
@@ -78,6 +83,17 @@ main > section:nth-of-type(1) > h2{
 main > section:nth-of-type(2) {
   grid-row: 3; 
   grid-column: 1; 
+}
+
+main > section:nth-of-type(1) > label {
+  display: inline-block; 
+}
+
+main > section:nth-of-type(1) > input {
+  width: 100px; 
+  padding: 5px; 
+  box-sizing: border-box; 
+  margin-bottom: 1em;
 }
 
 @media only screen and (max-width: 600px) {
