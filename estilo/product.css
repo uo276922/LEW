@@ -1,0 +1,125 @@
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  grid-template-areas:
+    "header header"
+    "main main"
+    "footer footer";
+  font-family: Arial, sans-serif;
+}
+
+header {
+  grid-area: header;
+}
+
+main {
+  grid-area: main;
+  display: grid;
+  grid-template-rows: auto auto auto; 
+  grid-template-columns: auto auto;
+}
+
+main > h1 {
+  grid-row: 1; 
+  grid-column: 1 / -1; 
+  margin-left: 0.5em;
+}
+
+main > img {
+  grid-row: 2; 
+  grid-column: 1;
+  max-width: 50%;
+  text-align: right;
+  margin-left: 2em;
+}
+
+main > section:nth-of-type(1) {
+  grid-row: 2;
+  grid-column: 2; 
+}
+main > section:nth-of-type(1) > h2{
+  text-align: right;
+  color: #d21d1d;
+  margin-right: 1.3em;
+  font-size: 2em;
+}
+
+main > section:nth-of-type(1) > h4{
+  color: #249b22;
+}
+
+main > section:nth-of-type(1) > button {
+  margin-top: auto; 
+  width: 100%; 
+  padding: 1em;
+  background-color: #d21d1d; 
+  font-size: 1em;
+  color: white; 
+  text-align: center;
+  border: none; 
+  border-radius: 5px; 
+  cursor: pointer; 
+  box-sizing: border-box; 
+}
+
+main > section:nth-of-type(1) > button:hover {
+  background-color: #df6262; 
+}
+
+main > section:nth-of-type(1) > h2{
+  text-align: right;
+  color: #d21d1d;
+  margin-right: 1.3em;
+  font-size: 2em;
+}
+
+main > section:nth-of-type(2) {
+  grid-row: 3; 
+  grid-column: 1; 
+}
+
+@media only screen and (max-width: 600px) {
+  main {
+    grid-template-columns: auto; 
+  }
+
+  main > h1 {
+    grid-row: 1; 
+    grid-column: 1 / -1; 
+  }
+
+  main > section:nth-of-type(1) {
+    grid-row: 2; 
+    grid-column: 1 / -1; 
+    margin-left: 1em;
+  }
+
+  main > section:nth-of-type(2) {
+    grid-row: 4;
+    grid-column: 1 / -1;
+    text-align: center;
+  }
+
+  main > img {
+    grid-row: 3;
+    grid-column: 1 / -1;
+    max-width: 100%;
+    margin-left: 0; 
+    text-align: center;
+  }
+}
+
+
+footer {
+  grid-area: footer;
+  bottom: 0;
+  width: 100%;
+  background-color: #d21d1d;
+  color: white;
+  text-align: center;
+}
+
+

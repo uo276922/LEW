@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Documento HTML5</title>
+    <link rel="stylesheet" href="estilo/index.css" />
+    <link rel="stylesheet" href="estilo/header.css" />
+    
+  </head>
+  <body>
+    <header>
+      <img src="multimedia/tienda.png" alt="Tienda" />
+      <input type="search" placeholder="Buscar ..." />
+      <button>
+        <img src="multimedia/usuario.png" alt="Usuario" />
+      </button>
+      <button>
+        <img src="multimedia/carrito.png" alt="Carrito" />
+      </button>
+      <nav>
+        <ul>
+          <li><a href="#">Ordenadores</a></li>
+          <li><a href="#">Teclados</a></li>
+          <li><a href="#">Mouses</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <aside>
+      <button onclick="controller.retrocederMensaje()">&lt;</button>
+      <p>Aprovecha ahora y llévate una increíble alfombrilla por la compra de cualquiera de los productos</p>
+      <button onclick="controller.avanzarMensaje()">&gt;</button>
+    </aside>
+
+    <main>
+      <section>
+        <article>
+          <h2>PC Gaming Master TXD</h2>
+          <p>Intel core i9 13900KF, RTX 4090, 32G RAM</p>
+          <img src="./multimedia/ordenador1.png" alt="Ordenador 1" />
+          <h3>4345,20€</h3>
+          <button onclick="controller.redirectToProduct()">Ver producto</button>
+        </article>
+        <article>
+          <h2>PC Racing PC Gaming</h2>
+          <p>Intel core i5 11400KF, GTX 1650, 16G RAM</p>
+          <img src="./multimedia/ordenador2.png" alt="Ordenador 2" />
+          <h3>649,95€</h3>
+          <button onclick="controller.redirectToProduct()">Ver producto</button>
+        </article>
+        <article>
+          <h2>Gaming PC Megaport ST</h2>
+          <p>AMD Ryzen 7 raven, 32G RAM, RTX 4060</p>
+          <img src="./multimedia/ordenador3.png" alt="Ordenador 3" />
+          <h3>900€</h3>
+          <button onclick="controller.redirectToProduct()">Ver producto</button>
+        </article>
+        <article>
+          <h2>PC Gaming Ultimate Evo</h2>
+          <p>AMD Ryzen 5 5600X, 36G RAM, RTX 4060 Ti</p>
+          <img src="./multimedia/ordenador4.png" alt="Ordenador 4" />
+          <h3>1190€</h3>
+          <button onclick="controller.redirectToProduct()">Ver producto</button>
+        </article>
+        <article>
+          <h2>Teclado Klim Chroma</h2>
+          <p>Teclado gaming retroiluminado tamaño grande</p>
+          <img src="./multimedia/teclado1.png" alt="Teclado 1" />
+          <h3>25,90€</h3>
+          <button onclick="controller.redirectToProduct()">Ver producto</button>
+        </article>
+        <article>
+          <h2>Teclado Kasic TKL RBW</h2>
+          <p>Teclado gaming inalámbrico retroiluminado</p>
+          <img src="./multimedia/teclado2.png" alt="Teclado 2" />
+          <h3>65,90€</h3>
+          <button onclick="controller.redirectToProduct()">Ver producto</button>
+        </article>
+        <article>
+          <h2>Teclado Gaming ESG K4</h2>
+          <p>Teclado con máxima agilidad retroiluminado</p>
+          <img src="./multimedia/teclado3.png" alt="Teclado 3" />
+          <h3>45,90€</h3>
+          <button onclick="controller.redirectToProduct()">Ver producto</button>
+        </article>
+        <article>
+          <h2>Teclado Gaming B-MOVE</h2>
+          <p>Teclado gaming retroiluminado usb negro varios modelos de luz</p>
+          <img src="./multimedia/teclado4.png" alt="Teclado 4" />
+          <h3>21,95€</h3>
+          <button onclick="controller.redirectToProduct()">Ver producto</button>
+        </article>
+        <article>
+          <h2>Ratón spirit of gamer</h2>
+          <p>Ratón gaming con cable, 7 botones programables rgb</p>
+          <img src="./multimedia/raton1.png" alt="Ratón 1" />
+          <h3>15,90€</h3>
+          <button onclick="controller.redirectToProduct()">Ver producto</button>
+        </article>
+        <article>
+          <h2>Ratón Gaming G540 black</h2>
+          <p>Ratón gaming con cable, luz RGB última generación</p>
+          <img src="./multimedia/raton2.png" alt="Ratón 2" />
+          <h3>22,90€</h3>
+          <button onclick="controller.redirectToProduct()">Ver producto</button>
+        </article>
+        <article>
+          <h2>Ratón Gaming Logitech</h2>
+          <p>Ratón gaming con cable programable logitech 2 modos de luces</p>
+          <img src="./multimedia/raton3.png" alt="Ratón 3" />
+          <h3>30,90€</h3>
+          <button onclick="controller.redirectToProduct()">Ver producto</button>
+        </article>
+        <article>
+          <h2>Ratón sGaming G340</h2>
+          <p>Ratón gaming inalámbrico programable agarre modular</p>
+          <img src="./multimedia/raton4.png" alt="Ratón 4" />
+          <h3>28,90€</h3>
+          <button onclick="controller.redirectToProduct()">Ver producto</button>
+        </article>
+      </section>
+    </main>
+
+    <footer>
+      <p>Política de privacidad</p>
+    </footer>
+    <script src="./controller.js"></script>
+  </body>
+</html>
+
+
