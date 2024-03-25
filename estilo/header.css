@@ -26,10 +26,18 @@ header button {
   color: white;
 }
 
+header button img {
+  background-color: white;
+  font-size: 0.75em;
+  border-radius: 100%;
+  padding: 10px;
+}
+
 nav {
   text-align: center;
   background-color: #d21d1d;
   color: white;
+  padding-bottom: 10px;
 }
 
 nav ul {
