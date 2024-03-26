@@ -16,54 +16,48 @@ header {
   grid-area: header;
 }
 
-
-
 main {
   grid-area: main;
   display: flex;
   justify-content: center;
   align-items: flex-start;
   flex-wrap: wrap;
-  gap: 1em;
+  gap: 0.0625em; 
 }
 
 section {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 1em;
+  gap: 0.0625em; 
   width: 100%;
-  margin-left: 2.75em;
-  margin-right: 2.75em;
-
+  margin-left: 0.1719em; 
 }
 
 article {
-  border: 1px solid #ccc;
-  border-radius: 10px;
-  padding: 1em;
-  width: calc((100% - 3em) / 4);
-  max-width: 300px;
-  flex: 0 0 calc(25% - 1em);
-  margin-bottom: 1em;
+  border: 0.0625em solid #ccc; 
+  border-radius: 0.625em;
+  padding: 0.625em; 
+  width: calc((100% - 0.1875em) / 4);
+  max-width: 15em; 
+  flex: 0 0 calc(25% - 0.0625em); 
+  margin-bottom: 0.0625em; 
   display: flex;
   flex-direction: column;
-  margin: 0.75em;
+  margin: 0.375em; 
 }
-
 
 article button {
   margin-top: auto; 
   width: 100%; 
-  padding: 0.5em 1em;
+  padding: 0.3125em 0.625em; 
   background-color: black; 
   color: white; 
   border: none; 
-  border-radius: 5px; 
+  border-radius: 0.3125em; 
   cursor: pointer; 
   box-sizing: border-box; 
 }
-
 
 article button:hover {
   background-color: #939596; 
@@ -74,7 +68,7 @@ aside {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1em;
+  padding: 0.625em;
   background-color: black;
   color: white;
   height: 4em;
@@ -84,12 +78,11 @@ aside button {
   background-color: black;
   color: white;
   border: none;
-  border-radius: 5px;
+  border-radius: 0.3125em; 
   cursor: pointer;
   font-size: 1.5em;
   touch-action: manipulation; 
 }
-
 
 aside button:hover {
   color: #939596; 
@@ -97,16 +90,16 @@ aside button:hover {
 
 aside p {
   margin: 0;
-  margin-left: 0.75em;
+  margin-left: 0.4688em; 
 }
 
-@media (max-width: 600px) {
+@media (max-width: 37.5em) { 
   main {
     justify-content: flex-start; 
   }
 
   article {
-    width: calc(100% - 2em); 
+    width: calc(100% - 0.125em); 
     margin-right: 0;
   }
 }

@@ -8,11 +8,12 @@ header {
   background-color: #d21d1d;
   color: white;
   height: 6em;
+  overflow: hidden;
 }
 
 header > *:nth-child(1) {
-  width: 4em;
-  height: 4em;
+  width: 3em;
+  height: 3em;
 }
 
 header > input {
@@ -22,6 +23,7 @@ header > input {
   border-radius: 1em;
   border: none;
   font-size: 1.2em;
+  width: 100%;
 }
 
 header > input::placeholder {
@@ -46,7 +48,7 @@ header > button {
 }
 
 header > button > img {
-  width: 1.5em;
+  width: 60%;
   height: 1.5em;
   padding: 0.5em;
   cursor: pointer;

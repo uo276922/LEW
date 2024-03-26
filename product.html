@@ -39,7 +39,9 @@
         <h4>Disponible online, 24 unidades</h4>
         <label for="unidades">Unidades:</label>
         <input type="number" id="unidades" name="unidades" min="1" value="1" />
-        <button>Comprar</button>
+        <div id="paypal-button">
+        </div>
+        
       </section>
       <section>
         <img src="./multimedia/ordenador1_2.png" alt="Ordenador 1_2" />
@@ -51,5 +53,42 @@
     <footer>
       <p>Política de privacidad</p>
     </footer>
+    <script src="https://www.paypalobjects.com/api/checkout.js"></script>
+    <script>
+      paypal.Button.render({
+        env: 'sandbox',
+        client: {
+          sandbox: 'AeyQOl7Hdwdl1To9vZqWNhFrAJVH0JPLtdnC8m2FfqmFZ6vH7hTF-mZdYPvCfkXkD4oZLeszpjzEnw78',
+          production: 'M9ZR56MJN4KRG'
+        },
+        locale: 'es_ES',
+        style: {
+          size: 'small',
+          color: 'gold',
+          shape: 'pill',
+        },
+        commit: true,
+
+        payment: function(data, actions) {
+          var unidades = document.getElementById('unidades').value;
+          var precioPorUnidad = 20.00; 
+          var nuevoTotal = unidades * precioPorUnidad;
+          return actions.payment.create({
+            transactions: [{
+              amount: {
+                total: nuevoTotal.toFixed(2), 
+                currency: 'EUR' 
+              }
+            }]
+          });
+        },
+        onAuthorize: function(data, actions) {
+          return actions.payment.execute().then(function() {
+            
+            window.alert('¡Gracias por su compra!');
+          });
+        }
+      }, '#paypal-button');
+    </script>
   </body>
 </html>
